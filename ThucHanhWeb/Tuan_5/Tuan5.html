@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan5</title>
+</head>
+<body>
+    <script> 
+        let valuea = prompt("a", 10);
+        let valueb = prompt("b", 10);
+        var pa = document.createElement('p');
+        var pb = document.createElement('p');
+        pa.textContent = `a: ${valuea}`;
+        document.body.appendChild(pa);
+        pb.textContent = `b: ${valueb}`;
+        document.body.appendChild(pb);
+        var buttona = document.createElement('button');
+        var buttonb = document.createElement('button');
+        var buttonc = document.createElement('button');
+        var buttond = document.createElement('button');
+        buttona.textContent = '+';
+        buttonb.textContent = '-';
+        buttonc.textContent = '*';
+        buttond.textContent = '/';
+        document.body.appendChild(buttona);
+        document.body.appendChild(buttonb);
+        document.body.appendChild(buttonc);
+        document.body.appendChild(buttond);
+        buttona.onclick = () => {
+            let valuec = parseInt(valuea) + parseInt(valueb);
+            var kqc = document.createElement('p');
+            kqc.textContent = `a + b= ${valuec}`;
+            console.log(kqc);
+            document.body.appendChild (kqc);
+        }
+         buttonb.onclick = () => {
+            let valuet  = parseInt(valuea) - parseInt(valueb);
+            var kqt = document.createElement('p');
+            kqt.textContent = `a - b= ${valuet}`;
+            document.body.appendChild (kqt);
+        }
+         buttonc.onclick = () => {
+            let valuen = parseInt(valuea) * parseInt(valueb);
+            var kqn = document.createElement('p');
+            kqn.textContent = `a * b= ${valuen}`;
+            document.body.appendChild (kqn);
+        }
+         buttond.onclick = () => {
+            let valuech = parseInt(valuea) / parseInt(valueb);
+            var kqch = document.createElement('p');
+            kqch.textContent = `a / b= ${valuech}`;
+            document.body.appendChild (kqch);
+        }
+    </script>
+</body>
+</html>

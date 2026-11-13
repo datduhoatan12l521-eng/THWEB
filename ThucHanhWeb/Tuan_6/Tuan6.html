@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan6</title>
+</head>
+<body>
+    <script>
+        var dat1 = "grey gray groy".match(/gr[ea]y/g);
+        document.write(dat1);
+        var dat2 = "Hello".match(/[ueoai]/g);
+        document.write(dat2);
+        var dat3 = "12345".match(/[135]/g);
+        document.write(dat3);
+        var dat4 = "Hello HELLO hello".match(/[hH]ello/g);
+        document.write(dat4);
+        var loichao = "Xin chào, bạn khỏe không? Tốt!".match(/[,.?!]/g);
+        var dat5 = loichao.length;
+        document.write("Số dấu câu là:",dat5);
+        var dat6 = "abcdef".match(/[^abc]/g);
+        document.write(dat6);
+        var dat7 = "a1b2c3".replace(/[^0-9]/g, "");
+        document.write(dat7);
+        var dat8 = "programming".replace(/[^ueoai]/g, "");
+        document.write(dat8);
+        var dat9 = 'nói "xin chào" và "tạm biệt"'.replace(/"[^"]"/g);
+        document.write(dat9);
+        var dat10 = "hijack".match(/[a-g]/g);
+        document.write(dat10);
+        var dat11 = "Học ReactJS Và TypeScript".match(/[A-Z]/g);
+        document.write(dat11);
+    </script>
+</body>
+</html>
